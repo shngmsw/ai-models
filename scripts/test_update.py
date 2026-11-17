@@ -30,10 +30,12 @@ OR = [
     orm("anthropic/claude-opus-5", "Anthropic: Claude Opus 5", "2026-07-24"),
     orm("anthropic/claude-opus-4.1", "Anthropic: Claude Opus 4.1", "2025-08-05"),
     orm("google/gemini-3.5-flash-lite", "Google: Gemini 3.5 Flash Lite", "2026-07-21"),
+    orm("google/gemini-4-carbon", "Google: Gemini 4 Carbon", "2026-11-10"),
     orm("google/gemini-2.5-pro", "Google: Gemini 2.5 Pro", "2025-06-17"),
     orm("google/gemma-4-31b-it", "Google: Gemma 4 31B", "2026-04-02"),
     orm("x-ai/grok-4.7", "SpaceXAI: Grok 4.7", "2026-09-21"),
     orm("meta/muse-ember", "Meta: Muse Ember", "2026-11-09"),
+    orm("meta/muse-spark-1.3-contributor", "Meta: Muse Spark 1.3 Contributor", "2026-09-02"),
     orm("meta-llama/llama-4-scout", "Meta: Llama 4 Scout", "2025-04-05"),
 ]
 ARENA = [
@@ -71,7 +73,7 @@ class BuildTest(unittest.TestCase):
 
     def test_filters(self):
         self.assertEqual(set(by_id(self.data, "openai")), {"gpt-6.1-terra"})
-        self.assertEqual(set(by_id(self.data, "google")), {"gemini-3.5-flash-lite", "gemini-2.5-pro"})
+        self.assertEqual(set(by_id(self.data, "google")), {"gemini-4-carbon", "gemini-3.5-flash-lite", "gemini-2.5-pro"})
         self.assertEqual(set(by_id(self.data, "meta")), {"muse-ember"})
 
     def test_scores(self):
@@ -86,7 +88,11 @@ class BuildTest(unittest.TestCase):
         a = by_id(self.data, "anthropic")
         self.assertTrue(a["claude-opus-5.5"]["current"])
         self.assertFalse(a["claude-opus-5"]["current"])
-        self.assertFalse(by_id(self.data, "google")["gemini-2.5-pro"]["current"])  # 365日超
+        g = by_id(self.data, "google")
+        self.assertTrue(g["gemini-4-carbon"]["current"])
+        self.assertFalse(g["gemini-3.5-flash-lite"]["current"])  # 旧世代
+        self.assertTrue(by_id(self.data, "meta")["muse-ember"]["current"])  # 版番号なし
+        self.assertFalse(by_id(self.data, "google")["gemini-2.5-pro"]["current"])  # 最新から120日超
 
     def test_shape(self):
         self.assertEqual(self.data["arena_date"], "2026-11-11")

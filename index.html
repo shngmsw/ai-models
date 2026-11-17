@@ -17,7 +17,7 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink);
   font: 15px/1.6 -apple-system, "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif; }
-main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+main { max-width: 1500px; margin: 0 auto; padding: 24px 16px 64px; }
 h1 { font-size: 22px; margin: 0 0 2px; letter-spacing: .02em; }
 .meta { color: var(--sub); font-size: 13px; margin: 0 0 16px; }
 .bar { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; margin-bottom: 20px; }
@@ -25,19 +25,22 @@ h1 { font-size: 22px; margin: 0 0 2px; letter-spacing: .02em; }
 .seg button { border: 0; background: none; color: var(--sub); font: inherit; padding: 6px 16px; cursor: pointer; }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 label.chk { color: var(--sub); font-size: 14px; cursor: pointer; user-select: none; }
-section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
-section header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+#list.company { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; align-items: start; }
+#list.smart ul { columns: 300px; column-gap: 0; }
+#list.smart li { break-inside: avoid; }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+section header { padding: 10px 12px; border-bottom: 1px solid var(--line); }
 section h2 { font-size: 17px; margin: 0; }
-section header span { color: var(--sub); font-size: 13px; }
+section header span { display: block; color: var(--sub); font-size: 12px; }
 section header b { color: var(--ink); }
 ul { list-style: none; margin: 0; padding: 0; }
-li { display: grid; grid-template-columns: 1fr auto auto; gap: 4px 14px; align-items: center;
-  padding: 9px 16px; border-bottom: 1px solid var(--line); }
+li { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; align-items: center;
+  padding: 7px 12px; border-bottom: 1px solid var(--line); }
 li:last-child { border-bottom: 0; }
 li.old { opacity: .6; }
-.name { all: unset; cursor: pointer; font-weight: 600; font-size: 16px; }
+.name { all: unset; cursor: pointer; font-weight: 600; font-size: 15px; }
 .name:hover, .name:focus-visible { color: var(--accent); }
-.id { display: block; color: var(--sub); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; word-break: break-all; }
+.id { display: block; color: var(--sub); font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; word-break: break-all; }
 .tag { font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: 2px; }
 .tag.new { color: var(--new); border: 1px solid var(--new); }
 .tag.co { color: var(--sub); background: var(--chip); font-weight: 500; }
@@ -50,7 +53,6 @@ footer a { color: inherit; }
 #toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: var(--bg);
   padding: 8px 16px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; }
 #toast.on { opacity: 1; }
-@media (max-width: 520px) { li { grid-template-columns: 1fr auto; } .date { display: none; } }
 </style>
 </head>
 <body>
@@ -97,17 +99,18 @@ function row(m, company) {
   left.append(name);
   if (isNew(m)) left.append(el("span", "tag new", "NEW"));
   if (company) left.append(el("span", "tag co", company));
-  left.append(el("span", "id", m.id));
+  left.append(el("span", "id", `${m.id} · ${m.released}`));
   const score = el("div", m.score == null ? "score none" : "score");
   if (m.score == null) score.textContent = "未評価";
   else { score.append(String(m.score), el("small", "", ` (${m.rank}位)`)); }
-  li.append(left, score, el("div", "date", m.released));
+  li.append(left, score);
   return li;
 }
 
 function render() {
   const list = $("#list");
   list.replaceChildren();
+  list.className = mode;
   const visible = (m) => showOld || m.current;
   if (mode === "company") {
     for (const p of data.providers) {
@@ -115,7 +118,7 @@ function render() {
       const sec = el("section"), head = el("header"), ul = el("ul");
       head.append(el("h2", "", p.label));
       const latest = [...p.models].sort(byDate)[0];
-      if (latest) { const s = el("span", "", "最新: "); s.append(el("b", "", latest.name), ` (${latest.released})`); head.append(s); }
+      if (latest) head.append(el("span", "", `最新 ${latest.released}`));
       models.forEach((m) => ul.append(row(m)));
       sec.append(head, ul);
       list.append(sec);

@@ -16,7 +16,7 @@ ARENA_URL = (
     "&offset={offset}&length=100"
 )
 DATA_PATH = Path(__file__).resolve().parent.parent / "data.json"
-CURRENT_MAX_AGE_DAYS = 365
+CURRENT_WINDOW_DAYS = 120  # その会社の最新モデルの公開日から遡ってこの日数以内だけを現行とする
 
 # (キー, 表示名, OpenRouter の接頭辞, 対象 ID の正規表現, Arena の organization)
 PROVIDERS = [
@@ -43,6 +43,12 @@ def family(name):
     return " ".join(s.split())
 
 
+def major(name):
+    """名前に含まれる最初の版番号の整数部。例: 'Gemini 4 Carbon' -> 4。版番号が無ければ None。"""
+    m = re.search(r"(?<![\w.])(\d+)(\.\d+)*(?![\w.])", normalize(name))
+    return int(m.group(1)) if m else None
+
+
 def arena_scores(rows):
     """organization ごとに {照合名: {score, rank}} を作る。同名は最高点を採る。"""
     out = {}
@@ -65,7 +71,7 @@ def build_provider(spec, or_models, scores, now):
         if not mid.startswith(prefix) or ":" in mid:
             continue
         short = mid[len(prefix):]
-        if not re.search(pattern, short) or "customtools" in short:
+        if not re.search(pattern, short) or re.search(r"customtools|contributor", short):
             continue
         if (m.get("architecture") or {}).get("output_modalities") != ["text"]:
             continue
@@ -83,18 +89,22 @@ def build_provider(spec, or_models, scores, now):
             "current": False,
             "_created": m["created"],
             "_family": family(name),
+            "_major": major(name),
         })
     newest = {}
     for m in models:
         f = m["_family"]
         if f not in newest or m["_created"] > newest[f]["_created"]:
             newest[f] = m
-    cutoff = now.timestamp() - CURRENT_MAX_AGE_DAYS * 86400
+    latest = max((m["_created"] for m in models), default=0)
+    cutoff = latest - CURRENT_WINDOW_DAYS * 86400
+    # 最新世代だけを現行にする。例: Gemini 4 があれば Gemini 3.x は旧モデル
+    top = max((m["_major"] for m in models if m["_major"] is not None), default=None)
     for m in newest.values():
-        m["current"] = m["_created"] >= cutoff
+        m["current"] = m["_created"] >= cutoff and m["_major"] in (None, top)
     models.sort(key=lambda m: -m["_created"])
     for m in models:
-        del m["_created"], m["_family"]
+        del m["_created"], m["_family"], m["_major"]
     return {"key": key, "label": label, "models": models}
 
 
