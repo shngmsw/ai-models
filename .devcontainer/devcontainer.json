@@ -1,0 +1,6 @@
+{
+  "name": "ai-models",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  "forwardPorts": [8000],
+  "postStartCommand": "echo 'python -m http.server 8000 でページを確認できます'"
+}

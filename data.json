@@ -1,0 +1,820 @@
+{
+ "updated_at": "2026-11-17T06:19:49Z",
+ "arena_date": "2026-11-11",
+ "providers": [
+  {
+   "key": "openai",
+   "label": "OpenAI",
+   "models": [
+    {
+     "id": "gpt-6.1-terra-pro",
+     "name": "GPT-6.1 Terra Pro",
+     "released": "2026-10-26",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-6.1-terra",
+     "name": "GPT-6.1 Terra",
+     "released": "2026-10-26",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-6.1-sol-pro",
+     "name": "GPT-6.1 Sol Pro",
+     "released": "2026-09-29",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-6.1-sol",
+     "name": "GPT-6.1 Sol",
+     "released": "2026-09-29",
+     "score": 1445,
+     "rank": 66,
+     "current": true
+    },
+    {
+     "id": "gpt-6-luna-pro",
+     "name": "GPT-6 Luna Pro",
+     "released": "2026-09-22",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-6-luna",
+     "name": "GPT-6 Luna",
+     "released": "2026-09-22",
+     "score": 1388,
+     "rank": 173,
+     "current": true
+    },
+    {
+     "id": "gpt-6-sol-pro",
+     "name": "GPT-6 Sol Pro",
+     "released": "2026-09-22",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-6-sol",
+     "name": "GPT-6 Sol",
+     "released": "2026-09-22",
+     "score": 1397,
+     "rank": 163,
+     "current": false
+    },
+    {
+     "id": "gpt-6-astra",
+     "name": "GPT-6 Astra",
+     "released": "2026-09-04",
+     "score": 1440,
+     "rank": 78,
+     "current": true
+    },
+    {
+     "id": "gpt-6-astra-pro",
+     "name": "GPT-6 Astra Pro",
+     "released": "2026-09-04",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-5.6-luna-pro",
+     "name": "GPT-5.6 Luna Pro",
+     "released": "2026-07-09",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5.6-luna",
+     "name": "GPT-5.6 Luna",
+     "released": "2026-07-09",
+     "score": 1431,
+     "rank": 94,
+     "current": false
+    },
+    {
+     "id": "gpt-5.6-terra-pro",
+     "name": "GPT-5.6 Terra Pro",
+     "released": "2026-07-09",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5.6-terra",
+     "name": "GPT-5.6 Terra",
+     "released": "2026-07-09",
+     "score": 1449,
+     "rank": 56,
+     "current": false
+    },
+    {
+     "id": "gpt-5.6-sol-pro",
+     "name": "GPT-5.6 Sol Pro",
+     "released": "2026-07-09",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5.6-sol",
+     "name": "GPT-5.6 Sol",
+     "released": "2026-07-09",
+     "score": 1457,
+     "rank": 46,
+     "current": false
+    },
+    {
+     "id": "gpt-chat-latest",
+     "name": "GPT Chat Latest",
+     "released": "2026-05-05",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-5.5-pro",
+     "name": "GPT-5.5 Pro",
+     "released": "2026-04-24",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-5.5",
+     "name": "GPT-5.5",
+     "released": "2026-04-24",
+     "score": 1471,
+     "rank": 31,
+     "current": true
+    },
+    {
+     "id": "gpt-5.4-nano",
+     "name": "GPT-5.4 Nano",
+     "released": "2026-03-17",
+     "score": 1372,
+     "rank": 187,
+     "current": true
+    },
+    {
+     "id": "gpt-5.4-mini",
+     "name": "GPT-5.4 Mini",
+     "released": "2026-03-17",
+     "score": 1412,
+     "rank": 139,
+     "current": true
+    },
+    {
+     "id": "gpt-5.4-pro",
+     "name": "GPT-5.4 Pro",
+     "released": "2026-03-05",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5.4",
+     "name": "GPT-5.4",
+     "released": "2026-03-05",
+     "score": 1469,
+     "rank": 35,
+     "current": false
+    },
+    {
+     "id": "gpt-5.3-codex",
+     "name": "GPT-5.3-Codex",
+     "released": "2026-02-24",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-5.2-codex",
+     "name": "GPT-5.2-Codex",
+     "released": "2026-01-14",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5.2-chat",
+     "name": "GPT-5.2 Chat",
+     "released": "2025-12-10",
+     "score": 1438,
+     "rank": 82,
+     "current": true
+    },
+    {
+     "id": "gpt-5.2-pro",
+     "name": "GPT-5.2 Pro",
+     "released": "2025-12-10",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5.2",
+     "name": "GPT-5.2",
+     "released": "2025-12-10",
+     "score": 1416,
+     "rank": 131,
+     "current": false
+    },
+    {
+     "id": "gpt-5.1-codex-max",
+     "name": "GPT-5.1-Codex-Max",
+     "released": "2025-12-04",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "gpt-5.1",
+     "name": "GPT-5.1",
+     "released": "2025-11-13",
+     "score": 1443,
+     "rank": 74,
+     "current": false
+    },
+    {
+     "id": "gpt-5.1-codex",
+     "name": "GPT-5.1-Codex",
+     "released": "2025-11-13",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5.1-codex-mini",
+     "name": "GPT-5.1-Codex-Mini",
+     "released": "2025-11-13",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5-pro",
+     "name": "GPT-5 Pro",
+     "released": "2025-10-06",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-5",
+     "name": "GPT-5",
+     "released": "2025-08-07",
+     "score": 1406,
+     "rank": 149,
+     "current": false
+    },
+    {
+     "id": "gpt-5-mini",
+     "name": "GPT-5 Mini",
+     "released": "2025-08-07",
+     "score": 1373,
+     "rank": 185,
+     "current": false
+    },
+    {
+     "id": "gpt-5-nano",
+     "name": "GPT-5 Nano",
+     "released": "2025-08-07",
+     "score": 1320,
+     "rank": 237,
+     "current": false
+    },
+    {
+     "id": "o3-pro",
+     "name": "o3 Pro",
+     "released": "2025-06-10",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "o3",
+     "name": "o3",
+     "released": "2025-04-16",
+     "score": 1410,
+     "rank": 143,
+     "current": false
+    },
+    {
+     "id": "gpt-4.1",
+     "name": "GPT-4.1",
+     "released": "2025-04-14",
+     "score": 1383,
+     "rank": 177,
+     "current": false
+    },
+    {
+     "id": "gpt-4.1-mini",
+     "name": "GPT-4.1 Mini",
+     "released": "2025-04-14",
+     "score": 1341,
+     "rank": 216,
+     "current": false
+    },
+    {
+     "id": "gpt-4.1-nano",
+     "name": "GPT-4.1 Nano",
+     "released": "2025-04-14",
+     "score": 1285,
+     "rank": 269,
+     "current": false
+    },
+    {
+     "id": "gpt-4o-2024-11-20",
+     "name": "GPT-4o (2024-11-20)",
+     "released": "2024-11-20",
+     "score": 1300,
+     "rank": 252,
+     "current": false
+    },
+    {
+     "id": "gpt-4o-2024-08-06",
+     "name": "GPT-4o (2024-08-06)",
+     "released": "2024-08-06",
+     "score": 1300,
+     "rank": 252,
+     "current": false
+    },
+    {
+     "id": "gpt-4o-mini",
+     "name": "GPT-4o-mini",
+     "released": "2024-07-18",
+     "score": 1286,
+     "rank": 268,
+     "current": false
+    },
+    {
+     "id": "gpt-4o-mini-2024-07-18",
+     "name": "GPT-4o-mini (2024-07-18)",
+     "released": "2024-07-18",
+     "score": 1286,
+     "rank": 268,
+     "current": false
+    },
+    {
+     "id": "gpt-4o",
+     "name": "GPT-4o",
+     "released": "2024-05-13",
+     "score": 1300,
+     "rank": 252,
+     "current": false
+    },
+    {
+     "id": "gpt-4o-2024-05-13",
+     "name": "GPT-4o (2024-05-13)",
+     "released": "2024-05-13",
+     "score": 1300,
+     "rank": 252,
+     "current": false
+    },
+    {
+     "id": "gpt-3.5-turbo-0613",
+     "name": "GPT-3.5 Turbo (older v0613)",
+     "released": "2024-01-25",
+     "score": 1125,
+     "rank": 359,
+     "current": false
+    },
+    {
+     "id": "gpt-3.5-turbo-16k",
+     "name": "GPT-3.5 Turbo 16k",
+     "released": "2023-08-28",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "gpt-4",
+     "name": "GPT-4",
+     "released": "2023-05-28",
+     "score": 1206,
+     "rank": 322,
+     "current": false
+    }
+   ]
+  },
+  {
+   "key": "anthropic",
+   "label": "Anthropic",
+   "models": [
+    {
+     "id": "claude-fable-5.2",
+     "name": "Claude Fable 5.2",
+     "released": "2026-11-09",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "claude-haiku-5.5",
+     "name": "Claude Haiku 5.5",
+     "released": "2026-10-07",
+     "score": 1398,
+     "rank": 160,
+     "current": true
+    },
+    {
+     "id": "claude-sonnet-5.5",
+     "name": "Claude Sonnet 5.5",
+     "released": "2026-09-28",
+     "score": 1469,
+     "rank": 34,
+     "current": true
+    },
+    {
+     "id": "claude-opus-5.5",
+     "name": "Claude Opus 5.5",
+     "released": "2026-09-22",
+     "score": 1514,
+     "rank": 3,
+     "current": true
+    },
+    {
+     "id": "claude-fable-5.1",
+     "name": "Claude Fable 5.1",
+     "released": "2026-09-01",
+     "score": 1512,
+     "rank": 4,
+     "current": false
+    },
+    {
+     "id": "claude-opus-5",
+     "name": "Claude Opus 5",
+     "released": "2026-07-24",
+     "score": 1507,
+     "rank": 5,
+     "current": false
+    },
+    {
+     "id": "claude-sonnet-5",
+     "name": "Claude Sonnet 5",
+     "released": "2026-06-30",
+     "score": 1442,
+     "rank": 76,
+     "current": false
+    },
+    {
+     "id": "claude-fable-5",
+     "name": "Claude Fable 5",
+     "released": "2026-06-09",
+     "score": 1492,
+     "rank": 12,
+     "current": false
+    },
+    {
+     "id": "claude-opus-4.8",
+     "name": "Claude Opus 4.8",
+     "released": "2026-05-27",
+     "score": 1462,
+     "rank": 42,
+     "current": false
+    },
+    {
+     "id": "claude-opus-4.7",
+     "name": "Claude Opus 4.7",
+     "released": "2026-04-16",
+     "score": 1490,
+     "rank": 15,
+     "current": false
+    },
+    {
+     "id": "claude-sonnet-4.6",
+     "name": "Claude Sonnet 4.6",
+     "released": "2026-02-17",
+     "score": 1458,
+     "rank": 44,
+     "current": false
+    },
+    {
+     "id": "claude-opus-4.6",
+     "name": "Claude Opus 4.6",
+     "released": "2026-02-04",
+     "score": 1501,
+     "rank": 9,
+     "current": false
+    },
+    {
+     "id": "claude-opus-4.5",
+     "name": "Claude Opus 4.5",
+     "released": "2025-11-24",
+     "score": 1451,
+     "rank": 54,
+     "current": false
+    },
+    {
+     "id": "claude-haiku-4.5",
+     "name": "Claude Haiku 4.5",
+     "released": "2025-10-15",
+     "score": 1396,
+     "rank": 164,
+     "current": false
+    },
+    {
+     "id": "claude-sonnet-4.5",
+     "name": "Claude Sonnet 4.5",
+     "released": "2025-09-29",
+     "score": 1439,
+     "rank": 81,
+     "current": false
+    },
+    {
+     "id": "claude-opus-4.1",
+     "name": "Claude Opus 4.1",
+     "released": "2025-08-05",
+     "score": 1419,
+     "rank": 119,
+     "current": false
+    }
+   ]
+  },
+  {
+   "key": "google",
+   "label": "Gemini",
+   "models": [
+    {
+     "id": "gemini-4-hydrogen",
+     "name": "Gemini 4 Hydrogen",
+     "released": "2026-11-12",
+     "score": 1502,
+     "rank": 8,
+     "current": true
+    },
+    {
+     "id": "gemini-4-carbon",
+     "name": "Gemini 4 Carbon",
+     "released": "2026-11-10",
+     "score": 1538,
+     "rank": 1,
+     "current": true
+    },
+    {
+     "id": "gemini-4-argon",
+     "name": "Gemini 4 Argon",
+     "released": "2026-10-13",
+     "score": 1529,
+     "rank": 2,
+     "current": true
+    },
+    {
+     "id": "gemini-3.8-flash",
+     "name": "Gemini 3.8 Flash",
+     "released": "2026-09-02",
+     "score": 1500,
+     "rank": 10,
+     "current": true
+    },
+    {
+     "id": "gemini-3.7-flash",
+     "name": "Gemini 3.7 Flash",
+     "released": "2026-08-13",
+     "score": 1489,
+     "rank": 16,
+     "current": false
+    },
+    {
+     "id": "gemini-3.6-flash",
+     "name": "Gemini 3.6 Flash",
+     "released": "2026-07-21",
+     "score": 1479,
+     "rank": 23,
+     "current": false
+    },
+    {
+     "id": "gemini-3.5-flash-lite",
+     "name": "Gemini 3.5 Flash Lite",
+     "released": "2026-07-21",
+     "score": 1435,
+     "rank": 90,
+     "current": true
+    },
+    {
+     "id": "gemini-3.5-flash",
+     "name": "Gemini 3.5 Flash",
+     "released": "2026-05-19",
+     "score": 1483,
+     "rank": 20,
+     "current": false
+    },
+    {
+     "id": "gemini-3.1-flash-lite",
+     "name": "Gemini 3.1 Flash Lite",
+     "released": "2026-05-07",
+     "score": 1416,
+     "rank": 132,
+     "current": false
+    },
+    {
+     "id": "gemini-3.1-flash-lite-preview",
+     "name": "Gemini 3.1 Flash Lite Preview",
+     "released": "2026-03-03",
+     "score": 1416,
+     "rank": 132,
+     "current": false
+    },
+    {
+     "id": "gemini-3.1-pro-preview",
+     "name": "Gemini 3.1 Pro Preview",
+     "released": "2026-02-19",
+     "score": 1480,
+     "rank": 21,
+     "current": true
+    },
+    {
+     "id": "gemini-3-flash-preview",
+     "name": "Gemini 3 Flash Preview",
+     "released": "2025-12-17",
+     "score": 1466,
+     "rank": 38,
+     "current": false
+    },
+    {
+     "id": "gemini-2.5-flash-lite",
+     "name": "Gemini 2.5 Flash Lite",
+     "released": "2025-07-22",
+     "score": 1379,
+     "rank": 179,
+     "current": false
+    },
+    {
+     "id": "gemini-2.5-flash",
+     "name": "Gemini 2.5 Flash",
+     "released": "2025-06-17",
+     "score": 1417,
+     "rank": 129,
+     "current": false
+    },
+    {
+     "id": "gemini-2.5-pro",
+     "name": "Gemini 2.5 Pro",
+     "released": "2025-06-17",
+     "score": 1458,
+     "rank": 45,
+     "current": false
+    },
+    {
+     "id": "gemini-2.5-pro-preview",
+     "name": "Gemini 2.5 Pro Preview 06-05",
+     "released": "2025-06-05",
+     "score": null,
+     "rank": null,
+     "current": false
+    }
+   ]
+  },
+  {
+   "key": "xai",
+   "label": "Grok",
+   "models": [
+    {
+     "id": "grok-4.7",
+     "name": "Grok 4.7",
+     "released": "2026-09-21",
+     "score": 1400,
+     "rank": 158,
+     "current": true
+    },
+    {
+     "id": "grok-4.6",
+     "name": "Grok 4.6",
+     "released": "2026-08-12",
+     "score": 1430,
+     "rank": 96,
+     "current": false
+    },
+    {
+     "id": "grok-4.5",
+     "name": "Grok 4.5",
+     "released": "2026-07-08",
+     "score": 1448,
+     "rank": 60,
+     "current": false
+    },
+    {
+     "id": "grok-build-0.1",
+     "name": "Grok Build 0.1",
+     "released": "2026-05-20",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "grok-4.3",
+     "name": "Grok 4.3",
+     "released": "2026-04-30",
+     "score": 1397,
+     "rank": 162,
+     "current": false
+    },
+    {
+     "id": "grok-4.20-multi-agent",
+     "name": "Grok 4.20 Multi-Agent",
+     "released": "2026-03-31",
+     "score": 1451,
+     "rank": 53,
+     "current": true
+    },
+    {
+     "id": "grok-4.20",
+     "name": "Grok 4.20",
+     "released": "2026-03-31",
+     "score": 1451,
+     "rank": 52,
+     "current": false
+    }
+   ]
+  },
+  {
+   "key": "meta",
+   "label": "Muse",
+   "models": [
+    {
+     "id": "muse-ember",
+     "name": "Muse Ember",
+     "released": "2026-11-09",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "muse-spark-open",
+     "name": "Muse Spark Open",
+     "released": "2026-10-15",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "muse-wonder",
+     "name": "Muse Wonder",
+     "released": "2026-10-12",
+     "score": 1503,
+     "rank": 6,
+     "current": true
+    },
+    {
+     "id": "muse-spark-1.3-contributor",
+     "name": "Muse Spark 1.3 Contributor",
+     "released": "2026-09-02",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
+    {
+     "id": "muse-spark-1.3",
+     "name": "Muse Spark 1.3",
+     "released": "2026-09-02",
+     "score": 1492,
+     "rank": 13,
+     "current": true
+    },
+    {
+     "id": "muse-spark-1.2-contributor",
+     "name": "Muse Spark 1.2 Contributor",
+     "released": "2026-08-21",
+     "score": null,
+     "rank": null,
+     "current": false
+    },
+    {
+     "id": "muse-glimmer-30b",
+     "name": "Muse Glimmer 30B",
+     "released": "2026-08-09",
+     "score": 1389,
+     "rank": 172,
+     "current": true
+    },
+    {
+     "id": "muse-spark-1.2",
+     "name": "Muse Spark 1.2",
+     "released": "2026-08-05",
+     "score": 1483,
+     "rank": 18,
+     "current": false
+    },
+    {
+     "id": "muse-spark-1.1",
+     "name": "Muse Spark 1.1",
+     "released": "2026-07-16",
+     "score": 1479,
+     "rank": 24,
+     "current": false
+    }
+   ]
+  }
+ ]
+}
