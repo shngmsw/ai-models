@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T21:20:33Z",
+ "updated_at": "2026-11-18T21:20:43Z",
  "arena_date": "2026-11-11",
  "providers": [
   {
@@ -578,6 +578,14 @@
    "key": "google",
    "label": "Gemini",
    "models": [
+    {
+     "id": "gemini-4-neon",
+     "name": "Gemini 4 Neon",
+     "released": "2026-11-18",
+     "score": null,
+     "rank": null,
+     "current": true
+    },
     {
      "id": "gemini-4-hydrogen",
      "name": "Gemini 4 Hydrogen",
