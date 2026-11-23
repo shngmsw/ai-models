@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-11-22T21:21:28Z",
- "arena_date": "2026-11-19",
+ "updated_at": "2026-11-23T21:21:05Z",
+ "arena_date": "2026-11-22",
  "providers": [
   {
    "key": "openai",
@@ -18,8 +18,8 @@
      "id": "gpt-6.2-astra",
      "name": "GPT-6.2 Astra",
      "released": "2026-11-17",
-     "score": 1414,
-     "rank": 141,
+     "score": 1413,
+     "rank": 142,
      "current": true
     },
     {
@@ -35,7 +35,7 @@
      "name": "GPT-6.2 Sol",
      "released": "2026-11-17",
      "score": 1414,
-     "rank": 140,
+     "rank": 141,
      "current": true
     },
     {
@@ -67,7 +67,7 @@
      "name": "GPT-6.1 Sol",
      "released": "2026-09-29",
      "score": 1446,
-     "rank": 63,
+     "rank": 65,
      "current": false
     },
     {
@@ -82,7 +82,7 @@
      "id": "gpt-6-luna",
      "name": "GPT-6 Luna",
      "released": "2026-09-22",
-     "score": 1390,
+     "score": 1391,
      "rank": 176,
      "current": true
     },
@@ -274,8 +274,8 @@
      "id": "gpt-5.1",
      "name": "GPT-5.1",
      "released": "2025-11-13",
-     "score": 1443,
-     "rank": 74,
+     "score": 1442,
+     "rank": 76,
      "current": false
     },
     {
@@ -323,7 +323,7 @@
      "name": "GPT-5 Nano",
      "released": "2025-08-07",
      "score": 1320,
-     "rank": 242,
+     "rank": 243,
      "current": false
     },
     {
@@ -355,7 +355,7 @@
      "name": "GPT-4.1 Mini",
      "released": "2025-04-14",
      "score": 1340,
-     "rank": 221,
+     "rank": 222,
      "current": false
     },
     {
@@ -363,7 +363,7 @@
      "name": "GPT-4.1 Nano",
      "released": "2025-04-14",
      "score": 1285,
-     "rank": 274,
+     "rank": 275,
      "current": false
     },
     {
@@ -371,7 +371,7 @@
      "name": "GPT-4o (2024-11-20)",
      "released": "2024-11-20",
      "score": 1300,
-     "rank": 257,
+     "rank": 258,
      "current": false
     },
     {
@@ -379,7 +379,7 @@
      "name": "GPT-4o (2024-08-06)",
      "released": "2024-08-06",
      "score": 1300,
-     "rank": 257,
+     "rank": 258,
      "current": false
     },
     {
@@ -387,7 +387,7 @@
      "name": "GPT-4o-mini",
      "released": "2024-07-18",
      "score": 1286,
-     "rank": 273,
+     "rank": 274,
      "current": false
     },
     {
@@ -395,7 +395,7 @@
      "name": "GPT-4o-mini (2024-07-18)",
      "released": "2024-07-18",
      "score": 1286,
-     "rank": 273,
+     "rank": 274,
      "current": false
     },
     {
@@ -403,7 +403,7 @@
      "name": "GPT-4o",
      "released": "2024-05-13",
      "score": 1300,
-     "rank": 257,
+     "rank": 258,
      "current": false
     },
     {
@@ -411,7 +411,7 @@
      "name": "GPT-4o (2024-05-13)",
      "released": "2024-05-13",
      "score": 1300,
-     "rank": 257,
+     "rank": 258,
      "current": false
     },
     {
@@ -419,7 +419,7 @@
      "name": "GPT-3.5 Turbo (older v0613)",
      "released": "2024-01-25",
      "score": 1125,
-     "rank": 364,
+     "rank": 365,
      "current": false
     },
     {
@@ -435,7 +435,7 @@
      "name": "GPT-4",
      "released": "2023-05-28",
      "score": 1206,
-     "rank": 327,
+     "rank": 328,
      "current": false
     }
    ]
@@ -448,8 +448,8 @@
      "id": "claude-fable-5.2",
      "name": "Claude Fable 5.2",
      "released": "2026-11-09",
-     "score": 1478,
-     "rank": 26,
+     "score": 1477,
+     "rank": 27,
      "current": true
     },
     {
@@ -464,15 +464,15 @@
      "id": "claude-sonnet-5.5",
      "name": "Claude Sonnet 5.5",
      "released": "2026-09-28",
-     "score": 1470,
-     "rank": 35,
+     "score": 1469,
+     "rank": 36,
      "current": true
     },
     {
      "id": "claude-opus-5.5",
      "name": "Claude Opus 5.5",
      "released": "2026-09-22",
-     "score": 1513,
+     "score": 1514,
      "rank": 4,
      "current": true
     },
@@ -536,7 +536,7 @@
      "id": "claude-opus-4.6",
      "name": "Claude Opus 4.6",
      "released": "2026-02-04",
-     "score": 1501,
+     "score": 1502,
      "rank": 10,
      "current": false
     },
@@ -552,7 +552,7 @@
      "id": "claude-haiku-4.5",
      "name": "Claude Haiku 4.5",
      "released": "2025-10-15",
-     "score": 1396,
+     "score": 1397,
      "rank": 169,
      "current": false
     },
@@ -560,7 +560,7 @@
      "id": "claude-sonnet-4.5",
      "name": "Claude Sonnet 4.5",
      "released": "2025-09-29",
-     "score": 1439,
+     "score": 1438,
      "rank": 83,
      "current": false
     },
@@ -582,7 +582,7 @@
      "id": "gemini-4-neon",
      "name": "Gemini 4 Neon",
      "released": "2026-11-18",
-     "score": 1524,
+     "score": 1523,
      "rank": 3,
      "current": true
     },
@@ -614,7 +614,7 @@
      "id": "gemini-3.8-flash",
      "name": "Gemini 3.8 Flash",
      "released": "2026-09-02",
-     "score": 1500,
+     "score": 1501,
      "rank": 11,
      "current": false
     },
@@ -630,7 +630,7 @@
      "id": "gemini-3.6-flash",
      "name": "Gemini 3.6 Flash",
      "released": "2026-07-21",
-     "score": 1480,
+     "score": 1479,
      "rank": 24,
      "current": false
     },
@@ -703,7 +703,7 @@
      "name": "Gemini 2.5 Pro",
      "released": "2025-06-17",
      "score": 1458,
-     "rank": 45,
+     "rank": 46,
      "current": false
     },
     {
@@ -724,7 +724,7 @@
      "id": "grok-4.7",
      "name": "Grok 4.7",
      "released": "2026-09-21",
-     "score": 1400,
+     "score": 1401,
      "rank": 163,
      "current": true
     },
@@ -794,7 +794,7 @@
      "id": "muse-wonder",
      "name": "Muse Wonder",
      "released": "2026-10-12",
-     "score": 1503,
+     "score": 1504,
      "rank": 7,
      "current": true
     },
@@ -802,7 +802,7 @@
      "id": "muse-spark-1.3",
      "name": "Muse Spark 1.3",
      "released": "2026-09-02",
-     "score": 1494,
+     "score": 1493,
      "rank": 13,
      "current": true
     },
@@ -811,7 +811,7 @@
      "name": "Muse Glimmer 30B",
      "released": "2026-08-09",
      "score": 1389,
-     "rank": 178,
+     "rank": 177,
      "current": true
     },
     {
